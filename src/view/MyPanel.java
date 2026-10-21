@@ -11,16 +11,8 @@ import java.awt.geom.Point2D;
 
 public class MyPanel extends JPanel {
     JTextField t1;
-//    JTextField t2;
     JButton b3;
     JButton b4;
-//    JButton b1;
-//    JButton cat;
-//    JButton dog;
-//    JButton b2;
-//    SpeakBehavior cat;
-//    SpeakBehavior dog;
-//    SpeakBehavior animals;
     Controller controller;
 
 
@@ -30,18 +22,11 @@ public class MyPanel extends JPanel {
         b3=new JButton("Ellipse");
         b4=new JButton("Rect");
 
-//        b1=new JButton("speak animal");
-//        cat=new JButton("setCat");
-//        dog=new JButton("setDog");
-
-
 
         add(t1);
         add(b3);
         add(b4);
-//        add(b1);
-//        add(cat);
-//        add(dog);
+
 
         b3.addActionListener(new ActionListener() {
             @Override
@@ -57,19 +42,6 @@ public class MyPanel extends JPanel {
                 controller.setRect();;
             }
         });
-//        ellipse.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                controller.setEllipse();
-//            }
-//        });
-//        rect.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                controller.setRect();
-//            }
-//        });
-
 
         addMouseListener(new MouseAdapter() {
             @Override
@@ -98,26 +70,4 @@ public class MyPanel extends JPanel {
 }
 
 
-//    public MyPanel(SpeakBehavior cat,SpeakBehavior dog){
-//        this.cat = cat;
-//        this.dog = dog;
-//        t1=new JTextField("         ");
-//        t2 = new JTextField("        ");
-//        b1=new JButton("cat speak");
-//        b2=new JButton("dog speak");
-//        add(t1);
-//        add(t2);
-//        add(b1);
-//        add(b2);
-//        b1.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                t1.setText(cat.speak());}
-//        });
-//        b2.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                t2.setText(dog.speak());}
-//        });
-//    }
-//}
+

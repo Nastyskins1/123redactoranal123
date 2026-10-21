@@ -1,8 +1,4 @@
 import controller.Controller;
-import model.Cat;
-import model.Dog;
-import view.MyFrame;
-import view.MyPanel;
 
 
 public class Main {
